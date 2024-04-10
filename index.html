@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- <h1>Welcome!</h1> -->
+    <div id="imageContainer">
+      <img id="moonImage" src="images/moon_144p.jpg" alt="Moon Image">
+    </div>
+    <div id="options">
+      <label for="quality">Select Quality:</label>
+      <select id="quality" onchange="changeQuality()">
+        <option value="144">144p</option>
+        <option value="240">240p</option>
+        <option value="360">360p</option>
+        <option value="480">480p</option>
+        <option value="720">720p</option>
+        <option value="1080">1080p</option>
+      </select>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

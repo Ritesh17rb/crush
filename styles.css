@@ -1,0 +1,71 @@
+.container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+    transition: color 0.5s ease;
+}
+
+h1:hover {
+    color: #ffcc00;
+}
+
+#imageContainer {
+    margin: 20px 0;
+    height: 400px;
+    width: 400px;
+    /* Adjust width if needed */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#moonImage,
+#moonVideo {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    object-fit: contain;
+    /* Ensure entire content is visible */
+}
+
+#options {
+    margin-bottom: 20px;
+}
+
+/* Gradient Background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b, #e778d4, #ffd9b5, #9ceedf, #ffb5ea, #ee8989);
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
