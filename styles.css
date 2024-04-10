@@ -21,9 +21,11 @@ h1:hover {
 #imageContainer {
     margin: 20px 0;
     height: 400px;
+    /* Set the height of the container */
     width: 400px;
-    /* Adjust width if needed */
+    /* Set the width of the container */
     overflow: hidden;
+    /* Ensure the image or video does not overflow */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,6 +33,8 @@ h1:hover {
 
 #moonImage,
 #moonVideo {
+    width: auto;
+    height: auto;
     max-width: 100%;
     max-height: 100%;
     display: block;
@@ -38,7 +42,9 @@ h1:hover {
     border: 1px solid #fff;
     border-radius: 10px;
     object-fit: contain;
-    /* Ensure entire content is visible */
+    /* Ensure entire image or video is visible without cropping */
+    object-position: center;
+    /* Improve vertical alignment */
 }
 
 #options {
