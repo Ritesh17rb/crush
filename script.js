@@ -17,6 +17,9 @@ function changeQuality() {
         case "720":
             var image = document.createElement('img');
             image.src = "images/moon_" + quality + "p.jpg";
+            image.style.objectFit = "contain";
+            image.style.width = "100%";
+            image.style.height = "100%";
             container.appendChild(image);
             break;
         case "1080":
@@ -24,11 +27,17 @@ function changeQuality() {
             video.src = "images/1080p.mp4";
             video.autoplay = true; // Automatically play the video
             video.controls = true; // Show video controls
+            video.style.objectFit = "contain";
+            video.style.width = "100%";
+            video.style.height = "100%";
             container.appendChild(video);
             break;
         default:
             var defaultImage = document.createElement('img');
             defaultImage.src = "images/moon_144p.jpg";
+            defaultImage.style.objectFit = "contain";
+            defaultImage.style.width = "100%";
+            defaultImage.style.height = "100%";
             container.appendChild(defaultImage);
     }
 }
